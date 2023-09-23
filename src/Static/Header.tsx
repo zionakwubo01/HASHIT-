@@ -34,6 +34,9 @@ color: black;
 @media (max-width: 375px){
    font-size: 13px;
 }
+@media (max-width: 414px){
+   font-size: 13px;
+}
 `
 const Togle = styled.div`
 height: 35px;
@@ -54,6 +57,11 @@ gap: 10px;
    height: 20px;
 
 }
+@media (max-width: 414px){
+   width: 50px;
+   height: 20px;
+
+}
 `
 const Logo = styled.img`
 @media (max-width: 320px){
@@ -61,6 +69,10 @@ const Logo = styled.img`
     
 }
 @media (max-width: 375px){
+    width: 10%;
+    
+}
+@media (max-width: 414px){
     width: 10%;
     
 }
@@ -80,12 +92,18 @@ justify-content: space-between;
     width: 87%;
     height: 100%;
 }
+@media (max-width: 414px){
+    width: 87%;
+    height: 100%;
+}
 `
 const Container = styled.div`
 height: 90px;
 width: 100%;
 background-color: white;
 display: flex; 
+position: fixed;
+z-index: 2;
 align-items: center;
 justify-content: center;
 @media (max-width: 320px){
@@ -94,6 +112,11 @@ justify-content: center;
 
 }
 @media (max-width: 375px){
+    width: 100%;
+    height: 50px;
+
+}
+@media (max-width: 414px){
     width: 100%;
     height: 50px;
 

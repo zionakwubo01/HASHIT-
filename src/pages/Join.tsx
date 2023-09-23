@@ -55,6 +55,9 @@ gap: 20px;
 @media (max-width: 375px){
    min-width:;
 }
+@media (max-width: 414px){
+   min-width:;
+}
 `
 const Can = styled.div`
 color: black;
@@ -76,7 +79,7 @@ input{
     border: 0;
     background-color: transparent;
     outline: 0;
-    color: white;
+    color: gray;
     font-size: 15px;
     @media (max-width: 320px){
         width: 100%;
@@ -84,11 +87,17 @@ input{
     @media (max-width: 375px){
         width: 100%;
     }
+    @media (max-width: 414px){
+        width: 100%;
+    }
 }
 @media (max-width: 320px){
     width:80%;
 }
 @media (max-width: 375px){
+    width:80%;
+}
+@media (max-width: 414px){
     width:80%;
 }
 `
@@ -106,6 +115,9 @@ span{
     font-size: 20px;
 }
 @media (max-width: 375px){
+    font-size: 20px;
+}
+@media (max-width: 414px){
     font-size: 20px;
 }
 `
@@ -159,6 +171,7 @@ background-color: white;
 display: flex;
 align-items: center;
 justify-content: center;
+z-index: 3;
 @media (max-width: 320px){
     width: 100%;
 }

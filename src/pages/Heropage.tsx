@@ -32,9 +32,10 @@ position: absolute;
 left: ${({left})=>left};
 right: ${({right})=>right};
 top: ${({top})=>top};
+@media 
 `
 const Super = styled.div`
-padding-top: 50px;
+// padding-top: 50px;
 text-align: center;
 color: black;
 font-weight: bold;
@@ -51,6 +52,10 @@ span{
     font-size: 20px;
     text-align: center;
 }
+@media (max-width: 414px){
+    font-size: 20px;
+    text-align: center;
+}
 `
 const Text = styled.div`
 text-align: center;
@@ -59,11 +64,15 @@ font-weight: 500;
 padding-top: 30px;
 padding-bottom: 40px;
 @media (max-width: 320px){
-    font-size: 15px;
+    font-size: 12px;
 text-align: center;
 }
 @media (max-width: 375px){
-    font-size: 15px;
+    font-size: 12px;
+text-align: center;
+}
+@media (max-width: 414px){
+    font-size: 12px;
 text-align: center;
 }
 `
@@ -74,6 +83,11 @@ const Image1 = styled.img`
     margin-top: 20px;
 }
 @media (max-width: 375px){
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+}
+@media (max-width: 414px){
     width: 90%;
     height: 90%;
     margin-top: 20px;
@@ -99,6 +113,12 @@ flex-direction: column;
     align-items: center;
     flex-direction: column;
 }
+@media (max-width: 414px){
+    width: 87%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 `
 
 const Container = styled.div`
@@ -106,6 +126,8 @@ min-height: ;
 width: 100%;
 background-color: #EEEEEE;
 display: flex;
+z-index: 3;
+padding-top: 100px;
 aliugn-items: center;
 justify-content: center;
 @media (max-width: 320px){
@@ -113,6 +135,10 @@ justify-content: center;
    
 }
 @media (max-width: 375px){
+    width: 100%;
+   
+}
+@media (max-width: 414px){
     width: 100%;
    
 }
